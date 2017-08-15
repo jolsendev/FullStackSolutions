@@ -1,0 +1,3 @@
+https://developer.mozilla.org/en-US/docs/Web/HTTP  contains a variety of tutorial and reference materials on every aspect of HTTP.
+https://letsencrypt.org/ is a great site to learn about HTTPS in a hands-on way, by creating your own HTTPS certificates and installing them on your site.
+https://chrome.google.com/webstore/detail/http-spy/agnoocojkneiphkobpcfoaenhpjnmifb?hl=en is a neat little Chrome extension that will show you the headers and request information for every request your browser makes.
