@@ -1,0 +1,41 @@
+--select max(name) from animals;
+
+--select * from animals limit 10;
+
+-- select * from animals where species = 'orangutan' order by birthdate;
+
+-- select name from animals where species = 'orangutan' order by birthdate desc;
+
+-- select name, birthdate from animals order by name limit 10 offset 20;
+
+select species, min(birthdate) from animals group by species;
+
+-- select name, count(*) as num from animals
+-- group by name
+-- order by num desc
+-- limit 5;
+
+--select species, count(*) as 'number' from animals
+--group by species
+--order by number desc;
+
+--select animals.name from animals join diet
+--on animals.species = diet.species
+--where diet.food = 'fish';
+
+--select diet.food from animals join diet
+--on animals.species = diet.species
+--group by diet.food
+--having count(*) = 1;
+
+--select ordernames.name, count(*) as num from ordernames, taxonomy, animals
+--where ordernames.t_order = taxonomy.t_order
+--and animals.species = taxonomy.name
+--group by ordernames.name
+--order by num desc
+
+
+
+notes
+where is a restriction on the source table
+having is a restriction on the result .... after aggregation!
